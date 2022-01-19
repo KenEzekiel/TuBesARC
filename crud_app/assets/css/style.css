@@ -1,0 +1,148 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* ROOT */
+:root {
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+/* HTML */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.title {
+    color: white;
+}
+
+#header nav {
+    background-color: #009879;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* A TAGS */
+a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CONTAINER */
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* MAIN SITE */
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-shadow {
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+/* Sementara belom kepake */
+.text-dark {
+    color: var(--dark);
+}
+
+.text-light {
+    color: var(--light);
+}
+/* Sementara belom kepake */
+
+.inline {
+    display: inline-block;
+}
+
+/* BELOM DIGANTI */
+.text-gradient {
+    background-color: black;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#site-main {
+    margin-top: 6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#site-main .container .box-nav > a {
+    font-size: 1rem;
+    padding: .5rem 1rem;
+}
+
+#site-main .container form {
+    margin: 2rem 0;
+}
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+.table .thead-dark th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table td, 
+.table th {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.table tbody tr {
+    border-bottom: thin solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.table td > a.btn {
+    padding: .25rem .75rem;
+    font-size: 1.1rem;
+    margin: .2rem;
+}
+
+.table tr:hover {
+   /* font-weight: bold; */
+   color: #009879;
+}
