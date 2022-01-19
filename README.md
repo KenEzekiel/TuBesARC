@@ -4,8 +4,8 @@ Something nice and good.
 
 ## Prereq
 - [NodeJS](https://nodejs.org/en/)
-- Herokuapp
-- MongoDB
+- [Herokuapp](https://www.heroku.com/)
+- [MongoDB](https://www.mongodb.com/)
 
 ## Setting Up Manually
 
