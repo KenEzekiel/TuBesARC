@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tubes ARC day 2</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <nav>
+            <div class="container">
+                <div class="text-center">
+                    <a href="/" class="nav-brand title">User Management System</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN SITE -->
+        <main id="site-main">
+            <div class="container">
+                <div class="box-nav d-flex justify-between">
+                    <a href="/add" class="border-shadow">
+                        <span class="text-gradient">New User <i class="uil uil-user"></i></span>
+                    </a>
+                </div>
+
+                <!-- FORM HANDLING -->
+
+                <form action="/" method="POST">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama</th>
+                                <th>NIM</th>
+                                <th>Fakultas</th>
+                                <th>Jurusan</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for (var i=0; i < user.length; i++) { %>
+                                <tr id='<%=user[i]._id%>'>
+                                    <td><%= i + 1 %></td>
+                                    <td><%= user[i].name %></td>
+                                    <td><%= user[i].email %></td>
+                                    <td><%= user[i].gender %></td>
+                                    <td><%= user[i].status %></td>
+                                    <td>
+                                        <a href="/update?id=<%=user[i]._id%>" class="btn border-shadow update">
+                                            <span class="text-gradient"><i class="uil uil-pen"></i></span>
+                                        </a>
+    
+                                        <a class="btn border-shadow delete" id='<%=user[i]._id%>'>
+                                            <span class="text-gradient"><i class="uil uil-multiply"></i></i></span>
+                                        </a>
+                                       
+                                    </td>
+                                </tr>
+                            <% } %>
+                            
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </main>
+    <!-- /MAIN SITE -->
