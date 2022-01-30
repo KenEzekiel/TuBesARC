@@ -2,6 +2,39 @@
     <%- include('include/_header')%>
 <!-- /Include Header  -->
 
+    <!-- MAIN SITE -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-user" class="border-shadow">
+                    <span class="text-gradient">New User <i class="uil uil-user"></i></span>
+                </a>
+            </div>
+
+            <!-- FORM HANDLING -->
+
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>NIM</th>
+                            <th>Fakultas</th>
+                            <th>Jurusan</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%- include('include/_show')%>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+<!-- /MAIN SITE -->
+
 <!-- Include Footer  -->
     <%- include('include/_footer')%>
 <!-- /Include Header  -->
